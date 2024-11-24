@@ -1,0 +1,61 @@
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+/* Стили для карточки */
+.photo-card {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.photo-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.photo-thumbnail:hover {
+    transform: scale(1.05);
+}
+
+/* Стили для попапа */
+.photo-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.photo-popup.active {
+    display: flex;
+}
+
+.photo-popup-content {
+    position: relative;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.popup-photo {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}

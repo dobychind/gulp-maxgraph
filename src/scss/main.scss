@@ -6,6 +6,11 @@
 
 // подключения компонентов страницы
 @import "./components/header";
+@import "./components/footer";
+@import "./components/slider";
+@import "./vendor.scss";
+@import "./components/directions";
+@import "./components/portfolio";
 
 // тестовые стили, удалите их
 .page__body {
@@ -13,4 +18,31 @@
   align-items: center;
   justify-content: center;
   height: var(--vh);
+}
+
+.site-container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.about {
+  &__text {
+    font-size: 20px;
+    text-align: justify;
+    margin: 0;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  &__title {
+    font-size: 36px;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+}
+
+.bg-white {
+  background-color: white;
 }

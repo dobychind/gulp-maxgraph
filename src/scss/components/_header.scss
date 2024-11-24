@@ -1,1 +1,17 @@
 // ваш код
+.header { 
+    display: flex;
+    width: 100%;
+    padding: 16px;
+    background-color: black;
+    &__container {
+        display: flex;
+    }
+    &__social {
+        display: flex;
+    }
+    &__logo {
+        width: 120px;
+        height: 50px;
+    }
+}

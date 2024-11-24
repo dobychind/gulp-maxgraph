@@ -7,10 +7,26 @@
   <div class="site-container">
     @include('partials/header.html')
     <main class="main">
-      <picture>
-        <source srcset="img/cover.webp" type="image/webp">
-        <img loading="lazy" src="img/cover.jpg" class="image" width="300" height="300" alt="Обложка канала MaxGraph">
-      </picture>
+      <section class="section bg-white" style="overflow: hidden;">
+        @include('partials/global/slider.html')
+        <div class="container" data-aos="fade-right" data-aos-offset="-200" data-aos-delay="300" data-aos-duration="600"
+          data-aos-easing="ease-out" data-aos-mirror="true" data-aos-once="true" data-aos-anchor-placement="top-center">
+          <h3 class="about__title">О нас</h3>
+          <div class="about__container">
+            <p class="about__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita odit eos iusto
+              culpa commodi nobis, dolorem rem. Amet facilis eligendi tenetur minima quasi rem quas accusantium
+              voluptates necessitatibus odio corporis excepturi maiores quis inventore esse,
+              laudantium nam nesciunt perferendis illo provident corrupti fuga dignissimos ipsa! Dignissimos unde sequi
+              itaque aperiam aspernatur voluptatibus cum culpa similique asperiores? Debitis nihil ex magnam, distinctio
+              excepturi esse! Vel doloremque velit minus, accusamus neque est modi,
+              assumenda minima tempore iure aut in aliquam, aliquid facilis reiciendis dolor? Praesentium deserunt quasi
+              error deleniti, provident sed officia delectus ut ipsum vero repellat modi temporibus quis explicabo
+              animi.</p>
+            </p>
+            @include('partials/global/directions.html')
+          </div>
+        </div>
+      </section>
     </main>
     @include('partials/footer.html')
     <!-- @include('html/h1.html') пример include -->

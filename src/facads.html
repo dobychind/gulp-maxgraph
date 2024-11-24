@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      <section class="section" style="overflow: hidden;">
+        @include('partials/global/slider.html')
+        <div class="container">
+          <h3 class="about__title">Спектр услуг</h3>
+          <div class="about__container">
+            <p class="about__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita odit eos iusto culpa commodi nobis, dolorem rem. Amet facilis eligendi tenetur minima quasi rem quas accusantium voluptates necessitatibus odio corporis excepturi maiores quis inventore esse, 
+              laudantium nam nesciunt perferendis illo provident corrupti fuga dignissimos ipsa! Dignissimos unde sequi itaque aperiam aspernatur voluptatibus cum culpa similique asperiores? Debitis nihil ex magnam, distinctio excepturi esse! Vel doloremque velit minus, accusamus neque est modi, 
+              assumenda minima tempore iure aut in aliquam, aliquid facilis reiciendis dolor? Praesentium deserunt quasi error deleniti, provident sed officia delectus ut ipsum vero repellat modi temporibus quis explicabo animi.</p>
+          </div>
+          @include('partials/global/portfolio.html')
+
+        </div>
+      </section>
+    </main>
+    @include('partials/footer.html')
+  </div>
+</body>

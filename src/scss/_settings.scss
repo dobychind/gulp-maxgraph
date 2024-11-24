@@ -78,6 +78,7 @@ a {
 .container {
   margin: 0 auto;
   padding: 0 var(--container-offset);
+  padding: 60px 0;
   max-width: var(--container-width);
 }
 
